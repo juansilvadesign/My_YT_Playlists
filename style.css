@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --text-color-hover: white;
+  --stroke-color: rgba(207, 118, 104, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(207, 118, 104, 0.3);
+  --highlight-color: rgba(207, 118, 104, 0.1);
+  --switch-bg-url: url('./assets/radio.png');
+}
+
+.party {
+  --text-color: lightblue;
+  --text-color-hover: rgb(213, 150, 255);
+  --stroke-color: rgb(173, 216, 230, 0.8);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.3);
+  --highlight-color: rgba(173, 216, 230, 0.2);
+  --switch-bg-url: url('./assets/headphone.png');
+}
+
+body {
+  height: 100vh;
+}
+
+body * {
+
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+
+}
+
+#video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#container ul img {
+  width: 24px;
+  height: 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+  
+#profile img {
+  width: 112px;
+}
+  
+#profile h1 {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+#switch-container {
+  position: relative;
+  display: flex;
+  margin: 8px auto;
+}
+
+#switch {
+  position: absolute;
+  width: 64px;
+  right: 0px;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: transparent var(--switch-bg-url) no-repeat center/cover;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+
+.party #switch button {
+  animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/* links */
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid #CF7568;
+  color: var(--text-color-hover);
+}
+
+.party-border {
+  animation: border-animation 0.5s infinite alternate;
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .party {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: #ff148f;
+  }
+  25% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: #0dd231;
+  }
+  75% {
+    border-color: rgb(0, 255, 242);
+  }
+  100% {
+    border-color: #be3fd0;
+  }
+}

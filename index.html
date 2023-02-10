@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us"></html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+    
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My YT Playlists</title>
+        <link rel="stylesheet" href="style.css" />
+        
+    </head>
+
+    <body>
+
+        <div id="video-container">
+            <video class="vinil" autoplay loop muted poster="./assets/vinil.jpg">
+                <source src="./assets/vinil.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="container">
+            
+            <div id="switch-container">
+
+                <div id="switch" onclick="toggleMode()">
+
+                    <button></button>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+            <div id="profile">
+
+                <img
+                    src="./assets/vinil-profile.png"
+                    alt=""
+                />
+
+                <h1>
+                    📻Choose your playlist!🎧
+                </h1>
+
+            </div>
+
+            <ul>
+                <li>
+                    <a class="animation" href="https://music.youtube.com/playlist?list=PLoVlwuf7VgQL6zBmJuBPd8FHpWs0re3Ch">케이팝<img src="assets/flag-south-korea.png"></a>
+                </li>
+                <li>
+                    <a class="animation" href="https://music.youtube.com/playlist?list=PLoVlwuf7VgQI4hkHqi744zg0cxlP94xgR">日本語<img src="assets/flag-japan.png"></a>
+                </li>
+                <li>
+                    <a class="animation" href="#">Rock🤘🏽</a>
+                </li>
+                <li>
+                    <a class="animation" href="https://music.youtube.com/playlist?list=PLoVlwuf7VgQKl9pyizXncoMIxmc2z6R-P">Eletronic🔥</a>
+                </li>
+                <li>
+                    <a class="animation" href="https://music.youtube.com/playlist?list=PLoVlwuf7VgQL98EcL3M-jghkqqVd7jGfU">Summer Eletrohits⛱️</a>
+                </li>
+                <li>
+                    <a class="animation" href="https://music.youtube.com/playlist?list=PLoVlwuf7VgQIenChNiaS6Wn6plI9-BH1M">Mix Brasil<img src="assets/flag-brazil.png"></a>
+                </li>
+                <li>
+                    <a class="animation" href="#">NCS🎶</a>
+                </li>
+            </ul>
+
+            <footer>
+                All songs were precisely selected! Send song suggestions to my <a href="mailto:jaypy.uxdesign@gmail.com">email</a>.
+            </footer>
+
+        </div>
+
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
