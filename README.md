@@ -18,7 +18,7 @@ You can see the website by <a href="https://juanpablodesigner.github.io/My_YT_Pl
 <br>
 
 <p align="center">
-  <img alt="project preview" src="https://user-images.githubusercontent.com/113949476/218243902-52bd4427-d1b8-44a6-96b8-98e68e1e0846.jpg" width="100%">
+  <img alt="project preview" src="https://user-images.githubusercontent.com/113949476/218612817-aeaf2b22-f6f4-466b-9b8e-0f7c6c76526f.png" width="100%">
 </p>
 
 ## 🚀 Techs
