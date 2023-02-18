@@ -32,7 +32,7 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
-This Project is a link aggregator that organizes all my YouTube playlists and is personalized with HTML, CSS, and JavaScript to train my coding skills.
+This Project is a link aggregator that organizes all my YouTube playlists and it's personalized with HTML, CSS, and JavaScript to train my coding skills.
 
 - [Access the finished project. Online.](https://juanpablodesigner.github.io/My_YT_Playlists/)
 
