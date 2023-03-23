@@ -159,6 +159,12 @@ ul li a:hover {
   color: var(--text-color-hover);
 }
 
+#ncs a img {
+  width: 45px;
+  height: 26px;
+  margin-top: 4px;
+}
+
 .party-border {
   animation: border-animation 0.5s infinite alternate;
 }
