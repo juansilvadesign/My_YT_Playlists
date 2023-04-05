@@ -47,7 +47,7 @@ body * {
   z-index: -1;
   overflow: hidden;
 }
-
+/*Do not use margin top, it will add an useless scrollbar and blank space at the end of the page.*/
 #container {
   width: 100%;
   max-width: 588px;
