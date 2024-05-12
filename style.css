@@ -227,6 +227,7 @@ footer {
     max-height: 380px;
   }
   .playlists {
+    height: 100%;
     overflow-y: auto;
   }
 }
