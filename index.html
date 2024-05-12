@@ -71,9 +71,9 @@
                     📻Choose your playlist!🎧
                 </h1>
 
-            </div>Français
+            </div>
             <!-- data-simplebar (inside <ul>)-->
-            <ul>
+            <ul class="playlists">
                 <li>
                     <a 
                         class="animation" 
@@ -402,6 +402,16 @@
 
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.0/simplebar.min.js"></script>-->
         <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+              $('.playlists').on('mousewheel', function(e) {
+                var scrollAmount = e.originalEvent.deltaY;
+                $(this).scrollTop($(this).scrollTop() - scrollAmount);
+                e.preventDefault();
+              });
+            });
+          </script>
     </body>
 
 </html>

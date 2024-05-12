@@ -47,6 +47,11 @@ body * {
   z-index: -1;
   overflow: hidden;
 }
+#video-container::-webkit-scrollbar {
+  width: 0px; /* Hide horizontal scrollbar */
+  height: 0px; /* Hide vertical scrollbar */
+}
+
 /*Do not use margin top, it will add an useless scrollbar and blank space at the end of the page.*/
 #container {
   width: 100%;
@@ -124,7 +129,7 @@ body * {
 }
 
 /* links */
-ul {
+.playlists {
   list-style: none;
 
   display: flex;
@@ -132,9 +137,10 @@ ul {
   gap: 16px;
 
   padding: 24px 0px 0px;
-
+  
+  width: 100%;
   max-height: 580px;
-  overflow: auto;
+  overflow-y: hidden;
 }
 /*
 .simplebar-content {
