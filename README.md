@@ -2,7 +2,7 @@
 
 <p align="center">
 All my YouTube playlists are organized and styled in one link. <br/>
-You can see the website by <a href="https://juanpablodesigner.github.io/My_YT_Playlists/">clicking here.</a>
+You can see the website by <a href="https://juansilvadesign.github.io/My_YT_Playlists/">clicking here.</a>
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ This project was developed with the following technologies:
 
 This Project is a link aggregator that organizes all my YouTube playlists and it's personalized with HTML, CSS, and JavaScript to train my coding skills.
 
-- [Access the finished project. Online.](https://juanpablodesigner.github.io/My_YT_Playlists/)
+- [Access the finished project. Online.](https://juansilvadesign.github.io/My_YT_Playlists/)
 
 ## :memo: Licence
 
